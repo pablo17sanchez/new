@@ -1,0 +1,54 @@
+<div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+    <div class="flb">
+        <div class="Aligner-item Aligner-item--top"></div>
+        <img src="../../assets/imgs/inabie2.png">
+        <div class="Aligner-item Aligner-item--bottom"></div>
+    </div>
+</div>
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>InabieAppRD</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+
+    <ion-grid>
+        <ion-row>
+
+            <ion-col>
+                <button class="button button-dark customBtn text-on-bottom" (click)="Calendar()" ion-button icon-start>
+  <img src="../../assets/imgs/schechule.png" height="40px" width="40px">
+  Calendario
+</button></ion-col>
+            <ion-col>
+                <button class="button button-dark customBtn text-on-bottom" ion-button icon-end>
+<img src="../../assets/imgs/form.png" height="40px" width="40px">
+
+                  Servicio 2
+ 
+</button></ion-col>
+        </ion-row>
+        <ion-row>
+
+            <ion-col>
+                <button class="button button-dark customBtn text-on-bottom" ion-button icon-start>
+<img src="../../assets/imgs/search.png" height="40px" width="40px">
+              Servicio 3
+            </button></ion-col>
+            <ion-col>
+                <button class="button button-dark customBtn text-on-bottom" (click)="Mapa()" ion-button icon-end>
+<img src="../../assets/imgs/map.png" height="40px" width="40px">
+        
+              Mapa de Inabie
+        
+            </button></ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
+
+<page-pages-footer></page-pages-footer>

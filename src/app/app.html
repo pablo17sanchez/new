@@ -1,0 +1,54 @@
+<ion-menu [content]="content">
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>Menu</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+
+
+        <ion-list>
+
+            <ion-item class="item-icon-left" menu-close (click)="inicio()">
+                <ion-icon name="home"></ion-icon> Inicio
+            </ion-item>
+
+            <ion-item class="item-icon-left" menu-close (click)="terminos()">
+                <ion-icon name="book"></ion-icon> Terminos y condiciones
+            </ion-item>
+
+
+
+
+        </ion-list>
+        <ion-list>
+            <ion-list-header>
+                Sobre Nosotros
+            </ion-list-header>
+            <ion-item class="item-icon-left" menu-close (click)="QuienesSomos()">
+                ¿Quiénes Somos?
+            </ion-item>
+
+        </ion-list>
+        <ion-list>
+            <ion-list-header>
+                Servicios
+            </ion-list-header>
+            <ion-item class="item-icon-left" menu-close (click)="Alimentacion()">
+                Servicio de Alimentación Escolar (PAE)
+            </ion-item>
+            <ion-item class="item-icon-left" menu-close (click)="Salud()">
+                Servicio de Nutricion y Salud
+            </ion-item>
+            <ion-item class="item-icon-left" menu-close (click)="Social()">
+                Programa de Servicio Social
+            </ion-item>
+
+        </ion-list>
+    </ion-content>
+
+</ion-menu>
+
+
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>
